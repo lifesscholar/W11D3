@@ -22,11 +22,11 @@ export const login = user => dispatch => SessionApiUtil.login(user)
 .then( 
   loggedUser => {
     // debugger
-    dispatch(receiveCurrentUser(loggedUser))
+    dispatch(receiveCurrentUser(loggedUser));
   },
   errors => {
     // debugger
-    dispatch(receiveErrors(errors.responseJSON))
+    dispatch(receiveErrors(errors.responseJSON));
   }
   );
 
